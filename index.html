@@ -3,6 +3,9 @@
     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -10,27 +13,70 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Assignmnet 02</title>
     </head>
-    <body>
+
+
+    <body class="font-inter max-w-[1600px] text-white mx-auto">
+    
         <header>
-            <nav class=" flex justify-around bg-[#1A0B2E] w-[1600px] h-[100px]">
-                <div class="gap-[314px]">
-                    <h2 class=" m-[30px] text-white text-4xl font-bold">Tech<span class="bg-[linear-gradient(to_top,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)]
-                bg-clip-text text-transparent font-bold">Wave</span></h2>
-                </div>
-                    <ul class="flex gap-[32px] m-[36.5px] text-white">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Episodes</a></li>
-                        <li><a href="">Host</a></li>
-                    </ul>
-                    <button class="w-[135px] bg-[linear-gradient(45deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] m-6 rounded-[32px] text-[16px] m;-[200px] text-white ">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-            </nav>
+        <nav class="flex justify-between lg:justify-around bg-[#2b0d56] text-white items-center p-3">
+            <h2 class="text-2xl text-white font-bold">Tech<span class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span></h2>
+            <div class="hidden lg:flex gap-8">
+                <a href="">About</a>
+                <a href="">Episodes</a>
+                <a href="">Host</a>
+            </div>
+            <button class="hidden lg:flex items-center border-none gap-1 border bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] rounded-[10000px] py-3 px-4">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            <a class="lg:hidden" href=""><img src="./assets/hamburger-menu.png" alt=""></a>
+        </nav>
+            
+        <section class="relative">
+
+        </section>
         
         </header>
         
 
-    <main></main>
+    <main>
+        <section class="bg-[#1A0B2E] ">
+            <div class=" max-w-[400px] lg:max-w-[1200px] mx-auto text-center mb-20 pt-[50px]">
+                <h2 class=" text-[32px] lg:text-5xl font-bold mb-4 ">About the Podcast</h2>
+                <p class="text-center">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. 
+                We break down complex topics into digestible insights, explore productivity strategies that actually work,
+                and share stories of personal growth from industry leaders.
+                </p>
+                <br>
+                <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+
+            </div>
+            <hr class="max-w-[1200px] mx-auto mb-20 ">
+            <div class="grid grid-cols-2 grid-rows-2 lg:grid-cols-4 max-w-[1200px] mx-auto justify-between gap-20 pb-[120px] text-center">
+                <div>
+                    <h1 class="text-[#00FF88] text-5xl font-bold mb-4">150k+</h1>
+                    <p>Monthly Listeners</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] text-5xl font-bold mb-4">2000+</h1>
+                    <p>Monthly Listeners</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] text-5xl font-bold mb-4">4.9<i class="fa-solid fa-star text-[#00FF88]"></i></h1>
+                    <p>Monthly Listeners</p>
+                </div>
+                <div>
+                    <h1 class="text-[#00FF88] text-5xl font-bold mb-4">50+</h1>
+                    <p>Monthly Listeners</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+
+        </section>
+    </main>
     <footer></footer>
     </body>
 </html>
